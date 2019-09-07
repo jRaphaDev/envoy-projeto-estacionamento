@@ -2,11 +2,8 @@ package br.com.estudo.veiculo.repository;
 
 import br.com.estudo.veiculo.model.Veiculo;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Repository
