@@ -22,17 +22,17 @@ public class VeiculoController {
         this.veiculoService = veiculoService;
     }
 
-    @PostMapping(value = "v1/veiculo")
+    @PostMapping(value = "v1/veiculos")
     public ResponseEntity create(VeiculoRequest request) {
         return ResponseEntity.created(null).build();
     }
 
-    @GetMapping(value = "v1/veiculo/user-id/{userId}")
+    @GetMapping(value = "v1/veiculos/user-id/{userId}")
     public ResponseEntity findByUserId(@PathVariable("userId") String userId) {
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping(value = "v1/veiculo")
+    @GetMapping(value = "v1/veiculos")
     public ResponseEntity findAll() {
         List<VeiculoResponse> response = this.veiculoService.findAll();
         return ResponseEntity.ok().body(response);
